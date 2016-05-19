@@ -1,8 +1,13 @@
 <div class="container">
 
+
+
   <h2>Employee Address Book</h2> 
 
 	<label ng-hide = "hideEmployeeData">Employee Search : <input type="text" ng-model = "search"/></label>
+	
+	 <button type="button" ng-hide = "hideEmployeeData" ng-click="hideEmployeeData = true;" class="btn btn-primary">View All Employees Data </button>
+	
 	<button type="button" ng-hide = "hideEmployeeData" ng-click="hideEmployeeData = true;" class="btn btn-primary">Add Employee</button>
 	<button type="button" ng-show = "hideEmployeeData" ng-click="saveNewEmplyee()" class="btn btn-success">Save Employee</button>   
 	<button type="button" ng-show = "hideEmployeeData" ng-click="hideEmployeeData = false;" class="btn btn btn-danger">Cancel</button>                                                                           
